@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Timers</title>
+  </head>
+  <body>
+    <h1>Timers</h1>
+    <ul>
+      {% for timer in timers %}
+      <li>
+        Timer ID: {{ timer.id }}, Title: {{ timer.title }}, Goal: {{ timer.goal
+        }}, Date Created: {{ timer.date_created }}
+      </li>
+      {% endfor %}
+    </ul>
+  </body>
+</html>
