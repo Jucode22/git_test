@@ -1,4 +1,4 @@
-from flask_sqlalchemy import SQLAlchemy
+'''from flask_sqlalchemy import SQLAlchemy
 import pymysql
 
 app = Flask(__name__)
@@ -15,5 +15,16 @@ class Timer(db.Model):
 def index():
     with app.app_context():
         timers = Timer.query.all()
-        return render_template('timers.html', timers=timers)
+        return render_template('timers.html', timers=timers)'''
+
+from flask import Flask
+
+app = Flask(__name__)
+
+@app.route('/')
+def hello_world():
+	return 'Hello World!'
+
+if __name__ == "__main__":
+	app.run()
 
